@@ -22,7 +22,7 @@ public class Controller {
         this.prefixStringService = services;
     }
 
-    @RequestMapping(value = "/date")
+    @RequestMapping(value = "/")
     public String getDate() {
         CompletableFuture<String> prefixString = prefixStringService.getStringValue();
         CompletableFuture<String> dayName = dayNameService.getDayName();
